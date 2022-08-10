@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Do you love me</title>
+</head>
+<body>
+<h2>Do you love me? </h2>
+<input type="button" id="ok" value="yes" onclick="yes()"></input>
+<input type="button" id="deoa" value="no" onmouseover="no()" style="position: absolute"> </input>
+
+
+<script>
+  function yes() {
+    alert("Anh cũng yêu em!");
+  }
+
+  function no() {
+    let noo = Math.floor(Math.random() * window.innerWidth);
+    let deo = Math.floor(Math.random() * window.innerHeight);
+    document.getElementById("deoa").style.left = noo + "px";
+    document.getElementById("deoa").style.top = deo + "px";
+  }
+</script>
+</body>
+</html>
