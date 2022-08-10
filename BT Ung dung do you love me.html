@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ứng dụng do you love me</title>
+</head>
+<style>
+
+
+</style>
+<body>
+<h2>Do you love me?</h2>
+
+
+    <input type="button" value="yes" onclick="yes()" id="ok"> </input>
+    <input type="button" value="no" onmouseover="no()" id="deoa" style="position: absolute "></input>
+<script>
+    function yes() {
+        alert("Anh cũng yêu em");
+    }
+    function no() {
+        let noo = Math.round(Math.random() * window.innerWidth);
+        let deo = Math.round(Math.random() * window.innerHeight);
+        document.getElementById("deoa").style.left = noo + 'px';
+        document.getElementById("deoa").style.top = deo + 'px';
+
+    }
+</script>
+</body>
+</html>
+
+
+
