@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Good-Fast-Cheap</title>
+</head>
+<body>
+<input type="radio" onclick="checked1()" id="good">Good</br>
+<input type="radio" onclick="checked1()" id="fast">Fast</br>
+<input type="radio" onclick="checked1()" id="cheap">Cheap</br>
+</body>
+</html>
+<script>
+
+
+        let good = document.getElementById("good");
+        let fast = document.getElementById("fast");
+        let cheap = document.getElementById("cheap");
+        let count = 1;
+
+        function checked1() {
+        if (good.checked === true && fast.checked === true && cheap.checked === true){
+            if (count === 1){
+                good.checked = false;
+                count++;
+            }
+            else  if (count === 2){
+                fast.checked = false;
+                count++;
+            }
+            else if (count === 3){
+                cheap.checked = false;
+                count = 1
+            }
+        }
+    }
+
+</script>
